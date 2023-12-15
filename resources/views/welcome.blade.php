@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
-        integrity="sha256-bVyZIfO/mqUpxEqOy4Bp2Txd9+/PUl57uCMeUSeb9t4=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -65,8 +63,7 @@
         </div>
     </div>
 
-
-    <div class="relative  flex-col justify-center h-screen overflow-hidden">
+    <div class="relative  flex-col justify-center  overflow-hidden">
         <div class="w-full p-6 m-auto  rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-xl">
             <h1 class="text-3xl font-semibold text-center text-gray-700">BERIBOUR 228</h1>
             <form class="space-y-4">
@@ -103,13 +100,11 @@
                         <span class="label-text">Entrez votre numero (whatsapp) </span>
                     </div>
                     <div class="flex">
-                        <select class="select select-bordered join-item" ">
-                            <option value="+228"
-                                style="background-image: url('{{ asset('images/togo.png') }}'); background-repeat: no-repeat; padding-left: 20px;">
-                                +228</option>
-                            <option value="+235"
-                                style="background-image: url('{{ asset('images/togo.png') }}'); background-repeat: no-repeat; padding-left: 20px;">
+                        <select class="select select-bordered join-item">
+                            <option value="+235">
                                 +235</option>
+                            <option value="+228">
+                                +228</option>
                         </select>
                         <div class="w-full">
                             <input type="number" name="name" placeholder="99XXXXXX"
@@ -124,24 +119,99 @@
                         </div>
                         <input type="file" class="file-input file-input-bordered w-full " />
                     </label>
-                </div> <div>
-                    <label class="form-control w-full ">
-                        <div class="label">
-                            <span class="label-text">Photo de visage clair </span>
-                        </div>
-                        <input type="file" class="file-input file-input-bordered w-full " />
-                    </label>
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
+                        <span class="label-text">Votre Race ? </span>
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="Race" class="w-full input input-bordered" />
+                    </div>
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
+                        <span class="label-text">Votre Keri ? </span>
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="Keri"
+                            class="w-full input input-bordered" />
+                    </div>
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
+                        <span class="label-text">Votre Keribour ? </span>
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="Keribour"
+                            class="w-full input input-bordered" />
+                    </div>
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
+                        <span class="label-text">Keri du pere ? </span>
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="Keri du pere"
+                            class="w-full input input-bordered" />
+                    </div>
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
+                        <span class="label-text">Keribour du pere ? </span>
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="Keribour du pere"
+                            class="w-full input input-bordered" />
+                    </div>
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
+                        <span class="label-text">Village natal (ça peut être différent du village parental) </span>
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="Village natal"
+                            class="w-full input input-bordered" />
+                    </div>
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
+                        <span class="label-text">Niveau d'études actuel </span>
+                    </div>
+                    <div class="flex">
+                        <select class="select select-bordered w-full">
+                            <option value="">Niveau d'études </option>
+                            <option value="L1">Premiere année </option>
+                            <option value="L2">Deuxieme année </option>
+                            <option value="L3">Licene </option>
+                            <option value="M1">Master 1 </option>
+                            <option value="M2">Master 2 </option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
+                        <span class="label-text">Option d'étude </span>
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="Option d'étude"
+                            class="w-full input input-bordered" />
+                    </div>
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
+                        <span class="label-text">École/Université actuelle </span>
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="name" placeholder="École/Université actuelle"
+                            class="w-full input input-bordered" />
+                    </div>
                 </div>
 
 
+
                 <div>
-                    <label class="label">
-                        <span class="text-base label-text">Confirm Password</span>
-                    </label>
-                    <input type="password" placeholder="Confirm Password" class="w-full input input-bordered" />
-                </div>
-                <div>
-                    <button class="btn btn-block">Sign Up</button>
+                    <button class="btn btn-block">Confirmer</button>
                 </div>
                 <span>Already have an account ?
                     <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Login</a></span>
@@ -150,11 +220,11 @@
     </div>
 
     {{-- footer --}}
-    {{-- <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
         <aside>
-            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+            <p>Copyright © 2023 - All right reserved Cherif</p>
         </aside>
-    </footer> --}}
+    </footer>
 </body>
 
 </html>
