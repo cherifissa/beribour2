@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
 class EtudiantController extends Controller
@@ -28,12 +29,13 @@ class EtudiantController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request);
+        // dd($request);
         $validatdata = $request->validate([
             'nom_prenom' => '',
             'numero_telephone' => '',
             'numero_whatsapp' => '',
-            'photo_visage' => '',
+            'photo_visage' => 'string',
+            'photo_visage' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             'race' => '',
             'keri' => '',
             'keribour' => '',
@@ -46,9 +48,12 @@ class EtudiantController extends Controller
             'annee_arrivee'=> '',
         ]);
 
-        $user = User::create($validatdata);
+        //$user = User::create($validatdata);
 
-        dd($user);
+        $imageName = Str::lower(str_replace(' ', '_', $request->nom_prenom)).'.'.$request->photo_visage->extension();
+
+        $request->photo_visage->move(public_path('images'), $imageName);
+        dd($imageName);
 
     }
 

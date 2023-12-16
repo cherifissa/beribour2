@@ -57,7 +57,7 @@
 
     <div class="relative  flex-col justify-center  overflow-hidden">
         <div class="w-full p-6 m-auto  rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-xl">
-            <form class="space-y-4" action="{{ route('user.store') }}" method="POST" accept="multipart/form-data">
+            <form class="space-y-4" action="{{ route('user.store') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="form-control w-full">
                     <div class="label">
