@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{ asset('build/assets/app-4e67dfa6.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-2406ce76.css') }}">
 </head>
 
 <body>
@@ -14,17 +14,17 @@
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0 class="btn btn-ghost btn-circle">
-                    <img src="{{ asset('images/logo.jpg') }}" class="h-9 w-9 rounded-2xl " alt="">
+                    <img src="{{ asset('images/logo.jpg') }}" class="h-9  w-9 rounded-2xl " alt="">
                 </div>
             </div>
         </div>
         <div class="navbar-center">
-            <a class="btn btn-ghost text-xl">BERIBOUR 228</a>
+            <a href="" class="btn btn-ghost text-xl">BERIBOUR 228</a>
         </div>
         <div class="navbar-end">
             <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16M4 18h7" />
