@@ -31,6 +31,7 @@ class User extends Authenticatable
         'niveau_etudes',
         'option_etude',
         'ecole_universite',
+        'annee_arrivee',
     ];
 
     /**

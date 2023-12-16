@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nom_prenom');
             $table->string('numero_telephone')->unique();
             $table->string('numero_whatsapp');
-            $table->string('photo_visage')->nullable();
+            $table->string('photo_visage');
             $table->string('race');
             $table->string('keri');
             $table->string('keribour');
@@ -26,6 +26,7 @@ return new class extends Migration
             $table->enum('niveau_etudes', ['L1', 'L2', 'L3', 'M1', 'M2'])->nullable();
             $table->string('option_etude');
             $table->string('ecole_universite');
+            $table->date('annee_arrivee');
             $table->timestamps();
         });
     }

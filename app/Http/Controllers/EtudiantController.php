@@ -30,21 +30,26 @@ class EtudiantController extends Controller
     {
         //dd($request);
         $validatdata = $request->validate([
-            'nom_prenom' => 'required',
-            'numero_telephone' => 'required',
-            'numero_whatsapp' => 'required',
-            'photo_visage' => 'required',
-            'race' => 'required',
-            'keri' => 'required',
-            'keribour' => 'required',
-            'keri_du_pere' => 'required',
-            'keribour_du_pere' => 'required',
-            'village_natal' => 'required',
-            'niveau_etudes' => 'required',
-            'option_etude' => 'required',
-            'ecole_universite' => 'required',
-            'annee_arrivee'=> 'required',
+            'nom_prenom' => '',
+            'numero_telephone' => '',
+            'numero_whatsapp' => '',
+            'photo_visage' => '',
+            'race' => '',
+            'keri' => '',
+            'keribour' => '',
+            'keri_du_pere' => '',
+            'keribour_du_pere' => '',
+            'village_natal' => '',
+            'niveau_etudes' => '',
+            'option_etude' => '',
+            'ecole_universite' => '',
+            'annee_arrivee'=> '',
         ]);
+
+        $user = User::create($validatdata);
+
+        dd($user);
+
     }
 
     /**
