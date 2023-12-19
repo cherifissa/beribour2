@@ -13,7 +13,7 @@ class EtudiantController extends Controller
      */
     public function index()
     {
-        //
+        return view('liste');
     }
 
     /**
@@ -29,32 +29,41 @@ class EtudiantController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
-        $validatdata = $request->validate([
-            'nom_prenom' => '',
-            'numero_telephone' => '',
-            'numero_whatsapp' => '',
-            'photo_visage' => 'string',
-            'photo_visage' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
-            'race' => '',
-            'keri' => '',
-            'keribour' => '',
-            'keri_du_pere' => '',
-            'keribour_du_pere' => '',
-            'village_natal' => '',
-            'niveau_etudes' => '',
-            'option_etude' => '',
-            'ecole_universite' => '',
-            'annee_arrivee'=> '',
+        // dd( $request);
+        $request->merge([
+            'numero_telephone' => $request->t_indication . $request->numero_telephone,
+            'numero_whatsapp' => $request->w_indication . $request->numero_whatsapp,
         ]);
 
-        //$user = User::create($validatdata);
+        $validatdata = $request->validate([
+            'nom_prenom' => 'required|string|min:12',
+            'numero_telephone' => 'required|string|unique:users|min:12',
+            'numero_whatsapp' => 'required|string|min:12',
+            'photo_visage' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
+            'race' => 'required|string',
+            'keri' => 'required|string',
+            'keribour' => 'required|string',
+            'keri_du_pere' => 'required|string',
+            'keribour_du_pere' => 'required|string',
+            'village_natal' => 'required|string',
+            'niveau_etudes' => 'required|string',
+            'option_etude' => 'required',
+            'ecole_universite' => 'required|string',
+            'annee_arrivee' => 'required|date',
+        ]);
 
-        $imageName = Str::lower(str_replace(' ', '_', $request->nom_prenom)).'.'.$request->photo_visage->extension();
+        $user = User::create($validatdata);
 
+        $imageName = Str::lower(str_replace(' ', '_', $request->nom_prenom)) . '.' . $request->photo_visage->extension();
         $request->photo_visage->move(public_path('images'), $imageName);
-        dd($imageName);
 
+        if ($user) {
+            return redirect()
+                ->route('/')
+                ->with('success', 'User created successfully');
+        } else {
+            return redirect()->back()->withErrors($validatdata)->withInput();
+        }
     }
 
     /**

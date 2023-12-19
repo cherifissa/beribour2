@@ -43,10 +43,12 @@
     <div class="hero min-m-screen"
         style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
         <div class="hero-overlay bg-opacity-60"></div>
-        <div class="hero-content text-center text-neutral-content">
+        <div class="hero-content text-center">
             <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                <p class="mb-5">Ce projet vise à collecter les informations nécessaires de chaque étudiant ou élève
+                <h1 class="mb-5 text-5xl font-bold ">+228</h1>
+                <p class="mb-5 text-slate-300 ">Ce projet vise à collecter les informations nécessaires de chaque
+                    étudiant ou
+                    élève
                     résidant au Togo.
                     Pour faciliter la liaison et la mise en contact des Beribour, il a été convenu de créer un site web
                     qui facilite certaines tâches, comme la connaissance, la liaison ou la prise de contact avec un
@@ -65,7 +67,7 @@
                     </div>
                     <div class="flex">
                         <input type="text" name="nom_prenom" placeholder="Nom & Prénom"
-                            class="w-full input input-bordered" />
+                            class="w-full input input-bordered" value="{{ old('nom_prenom') }}" />
                     </div>
                     @error('nom_prenom')
                         <div class="label">
@@ -87,7 +89,7 @@
                         </select>
                         <div class="w-full">
                             <input type="number" name="numero_telephone" placeholder="99XXXXXX"
-                                class="w-full input input-bordered" />
+                                class="w-full input input-bordered" value="{{ old('numero_telephone') }}" />
                         </div>
 
                     </div>
@@ -110,7 +112,7 @@
                         </select>
                         <div class="w-full">
                             <input type="number" name="numero_whatsapp" placeholder="99XXXXXX"
-                                class="w-full input input-bordered" />
+                                class="w-full input input-bordered" value="{{ old('numero_whatsapp') }}" />
                         </div>
 
                     </div>
@@ -125,7 +127,8 @@
                         <div class="label">
                             <span class="label-text">Photo de visage clair </span>
                         </div>
-                        <input type="file" name="photo_visage" class="file-input file-input-bordered w-full " />
+                        <input type="file" name="photo_visage"
+                            class="file-input file-input-bordered w-full "value="{{ old('photo_visage') }}" />
                     </label>
                     @error('photo_visage')
                         <div class="label">
@@ -138,7 +141,8 @@
                         <span class="label-text">Votre Race ? </span>
                     </div>
                     <div class="flex">
-                        <input type="text" name="race" placeholder="Race" class="w-full input input-bordered" />
+                        <input type="text" name="race" placeholder="Race" class="w-full input input-bordered"
+                            value="{{ old('race') }}" />
                     </div>
                     @error('race')
                         <div class="label">
@@ -151,8 +155,8 @@
                         <span class="label-text">Votre Keri ? </span>
                     </div>
                     <div class="flex">
-                        <input type="text" name="keri" placeholder="Keri"
-                            class="w-full input input-bordered" />
+                        <input type="text" name="keri" placeholder="Keri" class="w-full input input-bordered"
+                            value="{{ old('keri') }}" />
                     </div>
                     @error('keri')
                         <div class="label">
@@ -166,7 +170,7 @@
                     </div>
                     <div class="flex">
                         <input type="text" name="keribour" placeholder="Keribour"
-                            class="w-full input input-bordered" />
+                            class="w-full input input-bordered" value="{{ old('keribour') }}" />
                     </div>
                     @error('keribour')
                         <div class="label">
@@ -180,7 +184,7 @@
                     </div>
                     <div class="flex">
                         <input type="text" name="keri_du_pere" placeholder="Keri du pere"
-                            class="w-full input input-bordered" />
+                            class="w-full input input-bordered" value="{{ old('keri_du_pere') }}" />
                     </div>
                     @error('keri_du_pere')
                         <div class="label">
@@ -194,7 +198,7 @@
                     </div>
                     <div class="flex">
                         <input type="text" name="keribour_du_pere" placeholder="Keribour du pere"
-                            class="w-full input input-bordered" />
+                            class="w-full input input-bordered" value="{{ old('keribour_du_pere') }}" />
                     </div>
                     @error('keribour_du_pere')
                         <div class="label">
@@ -208,7 +212,7 @@
                     </div>
                     <div class="flex">
                         <input type="text" name="village_natal" placeholder="Village natal"
-                            class="w-full input input-bordered" />
+                            class="w-full input input-bordered" value="{{ old('village_natal') }}" />
                     </div>
                     @error('village_natal')
                         <div class="label">
@@ -239,11 +243,11 @@
                 </div>
                 <div class="form-control w-full">
                     <div class="label">
-                        <span class="label-text">Option d'étude </span>
+                        <span class="label-text">Filiere ou specialité d'étude </span>
                     </div>
                     <div class="flex">
                         <input type="text" name="option_etude" placeholder="Option d'étude"
-                            class="w-full input input-bordered" />
+                            class="w-full input input-bordered" value="{{ old('option_etude') }}" />
                     </div>
                     @error('option_etude')
                         <div class="label">
@@ -257,7 +261,7 @@
                     </div>
                     <div class="flex">
                         <input type="text" name="ecole_universite" placeholder="École/Université actuelle"
-                            class="w-full input input-bordered" />
+                            class="w-full input input-bordered" value="{{ old('ecole_universite') }}" />
                     </div>
                     @error('ecole_universite')
                         <div class="label">
@@ -270,7 +274,8 @@
                         <span class="label-text">Année d'arrivée à Lomé</span>
                     </div>
                     <div class="flex">
-                        <input type="date" name="annee_arrivee" class="w-full input input-bordered" />
+                        <input type="date" name="annee_arrivee" class="w-full input input-bordered"
+                            value="{{ old('annee_arrivee') }}" />
                     </div>
                     @error('annee_arrivee')
                         <div class="label">

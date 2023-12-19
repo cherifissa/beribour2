@@ -16,6 +16,6 @@ use App\Http\Controllers\EtudiantController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('index');
 
 Route::resource('user', EtudiantController::class);
