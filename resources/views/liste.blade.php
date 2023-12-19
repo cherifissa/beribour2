@@ -63,9 +63,36 @@
                 <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
                 <p>M1 à Esgis</p>
                 <p>Promotion: 2020</p>
-                Dandasourara, Ourdi Keri
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Listen</button>
+                <p>Dandasourara, Ourdi Keri</p>
+                <p>Teboura keribour, Ouhira Keribour</p>
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,9 +103,36 @@
                 <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
                 <p>M1 à Esgis</p>
                 <p>Promotion: 2020</p>
-                Dandasourara, Ourdi Keri
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Listen</button>
+                <p>Dandasourara, Ourdi Keri</p>
+                <p>Teboura keribour, Ouhira Keribour</p>
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,9 +143,36 @@
                 <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
                 <p>M1 à Esgis</p>
                 <p>Promotion: 2020</p>
-                Dandasourara, Ourdi Keri
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Listen</button>
+                <p>Dandasourara, Ourdi Keri</p>
+                <p>Teboura keribour, Ouhira Keribour</p>
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,9 +183,36 @@
                 <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
                 <p>M1 à Esgis</p>
                 <p>Promotion: 2020</p>
-                Dandasourara, Ourdi Keri
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Listen</button>
+                <p>Dandasourara, Ourdi Keri</p>
+                <p>Teboura keribour, Ouhira Keribour</p>
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,12 +223,40 @@
                 <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
                 <p>M1 à Esgis</p>
                 <p>Promotion: 2020</p>
-                Dandasourara, Ourdi Keri
-                <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Listen</button>
+                <p>Dandasourara, Ourdi Keri</p>
+                <p>Teboura keribour, Ouhira Keribour</p>
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
 
     </div>
     {{-- footer --}}
