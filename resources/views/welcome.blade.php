@@ -1,11 +1,15 @@
 <!doctype html>
-<html data-theme="base-100">
+<html lang="fr" data-theme="base-100">
 
 <head>
     <meta charset="utf-8">
+    <title>+228</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
-    <link rel="stylesheet" href="{{ asset('build/assets/app-2406ce76.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('build/assets/app-2406ce76.css') }}"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css">
+    <script src="{{ asset('jquery/jquery.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
 </head>
 
 <body>
@@ -14,7 +18,7 @@
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0 class="btn btn-ghost btn-circle">
-                    <img src="{{ asset('images/logo.jpg') }}" class="h-9  w-9 rounded-2xl " alt="">
+                    <img src="{{ asset('images/logo.jpg') }}" class="h-9 w-9 rounded-2xl " alt="">
                 </div>
             </div>
         </div>
@@ -59,7 +63,8 @@
 
     <div class="relative  flex-col justify-center  overflow-hidden">
         <div class="w-full p-6 m-auto  rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-xl">
-            <form class="space-y-4" action="{{ route('user.store') }}" method="POST" enctype="multipart/form-data">
+            <form class="space-y-4" id="myform" action="{{ route('user.store') }}" method="POST"
+                enctype="multipart/form-data">
                 @csrf
                 <div class="form-control w-full">
                     <div class="label">
@@ -127,8 +132,9 @@
                         <div class="label">
                             <span class="label-text">Photo de visage clair </span>
                         </div>
-                        <input type="file" name="photo_visage"
-                            class="file-input file-input-bordered w-full "value="{{ old('photo_visage') }}" />
+                        <input type="file" name="photo_visage_crop" id="photo_visage_crop"
+                            class="file-input file-input-bordered w-full " accept="image/*" />
+
                     </label>
                     @error('photo_visage')
                         <div class="label">
@@ -291,6 +297,18 @@
                 <span>Already have an account ?
                     <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Login</a></span>
             </form>
+
+            <div id="my_modal_1" class=" crop_image fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50">
+                <div class="modal-box flex items-center justify-center h-full w-full">
+                    <div class="p-8 mx-auto">
+                        <div class="w-10 h-10 max-w-96" id="image_demo"></div>
+                        <div class="flex justify-end">
+                            <button id="closeModal" class="btn">Confirmer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -300,6 +318,86 @@
             <p>Copyright © 2023 - All right reserved Cherif</p>
         </aside>
     </footer>
+
+    <script>
+        $(document).ready(function() {
+
+
+            $('#photo_visage_crop').change(function() {
+
+                $image_crop = $('#image_demo').croppie({
+                    enableExif: false,
+                    showZoomer: false,
+                    enableZoom: true,
+                    viewport: {
+                        width: 360,
+                        height: 360,
+                        type: 'square'
+                    },
+                    boundary: {
+                        width: 390,
+                        height: 390
+                    }
+                });
+                if ($image_crop) {
+                    $image_crop.croppie('destroy');
+                    $image_crop = $('#image_demo').croppie({
+                        enableExif: false,
+                        showZoomer: false,
+                        enableZoom: true,
+                        viewport: {
+                            width: 360,
+                            height: 360,
+                            type: 'square'
+                        },
+                        boundary: {
+                            width: 390,
+                            height: 390
+                        }
+                    });
+                }
+                var reader = new FileReader();
+                reader.onload = function(event) {
+
+                    $image_crop.croppie('bind', {
+                        url: event.target.result
+                    }).then(function() {
+                        console.log('jQuery bind complete');
+                    });
+                }
+
+                reader.readAsDataURL(this.files[0]);
+                $('#my_modal_1').removeClass('hidden');
+
+            });
+
+            $('.crop_image').click(function(event) {
+                $image_crop.croppie('result', {
+                    type: 'canvas',
+                    size: 'viewport'
+                }).then(function(response) {
+                    var myForm = document.getElementById('myform');
+
+                    var input = document.createElement('input');
+
+                    // Set the type and name attributes of the input
+                    input.type = 'hidden';
+                    input.name = 'photo_visage';
+
+                    // Set the value of the input to the base64 data
+                    input.value = response;
+
+                    myForm.appendChild(input);
+
+                    $('#my_modal_1').addClass('hidden');
+
+                })
+            });
+
+
+        });
+    </script>
+
 </body>
 
 </html>
