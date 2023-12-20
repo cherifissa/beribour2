@@ -29,27 +29,16 @@ class EtudiantController extends Controller
      */
     public function store(Request $request)
     {
-        $base64Data = substr($request->photo_visage, strpos($request->photo_visage, ',') + 1);
-
-        // Decode the base64 data
-        $decodedData = base64_decode($base64Data);
-
-        $imageName = Str::lower(str_replace(' ', '_', $request->nom_prenom)) . '.' . 'png';
-        file_put_contents(public_path() . '/images/' . $imageName, $decodedData);
-
-
-
         $request->merge([
             'numero_telephone' => $request->t_indication . $request->numero_telephone,
             'numero_whatsapp' => $request->w_indication . $request->numero_whatsapp,
-            'photo_visage' => $imageName,
         ]);
 
         $validatdata = $request->validate([
             'nom_prenom' => 'required|string|min:12',
             'numero_telephone' => 'required|string|unique:users|min:12',
             'numero_whatsapp' => 'required|string|min:12',
-            'photo_visage' => 'required',
+            'photo_visage' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             'race' => 'required|string',
             'keri' => 'required|string',
             'keribour' => 'required|string',
@@ -62,7 +51,19 @@ class EtudiantController extends Controller
             'annee_arrivee' => 'required|date',
         ]);
 
-        //dd($request);
+        if ($request->hasfile('photo_visage')) {
+            $file = $request->file('photo_visage');
+            $extenstion = $file->getClientOriginalExtension();
+            $imageName = Str::lower(str_replace(' ', '_', $request->nom_prenom));
+            $filename = $imageName . '.' . $extenstion;
+            $file->move('images', $filename);
+            $validatdata['photo_visage']  = $filename;
+        } else {
+            return redirect()
+                ->back()
+                ->withErrors($validatdata)
+                ->withInput();
+        }
 
         $user = User::create($validatdata);
 

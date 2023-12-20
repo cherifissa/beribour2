@@ -87,14 +87,14 @@
                     </div>
                     <div class="flex">
                         <select class="select select-bordered join-item" name="t_indication">
-                            <option value="+228">
+                            <option value="+228" {{ old('t_indication') == '+228' ? 'selected' : '' }}>
                                 +228</option>
-                            <option value="+235">
+                            <option value="+235" {{ old('t_indication') == '+235' ? 'selected' : '' }}>
                                 +235</option>
                         </select>
                         <div class="w-full">
                             <input type="number" name="numero_telephone" placeholder="99XXXXXX"
-                                class="w-full input input-bordered" value="{{ old('numero_telephone') }}" />
+                                class="w-full input input-bordered" value="{{ substr(old('numero_telephone'), 4) }}" />
                         </div>
 
                     </div>
@@ -110,14 +110,14 @@
                     </div>
                     <div class="flex">
                         <select class="select select-bordered join-item" name="w_indication">
-                            <option value="+235">
+                            <option value="+235" {{ old('w_indication') == '+228' ? 'selected' : '' }}>
                                 +235</option>
-                            <option value="+228">
+                            <option value="+228" {{ old('w_indication') == '+228' ? 'selected' : '' }}>
                                 +228</option>
                         </select>
                         <div class="w-full">
                             <input type="number" name="numero_whatsapp" placeholder="99XXXXXX"
-                                class="w-full input input-bordered" value="{{ old('numero_whatsapp') }}" />
+                                class="w-full input input-bordered" value="{{ substr(old('numero_whatsapp'), 4) }}" />
                         </div>
 
                     </div>
@@ -132,7 +132,7 @@
                         <div class="label">
                             <span class="label-text">Photo de visage clair </span>
                         </div>
-                        <input type="file" name="photo_visage_crop" id="photo_visage_crop"
+                        <input type="file" name="photo_visage" id="photo_visage"
                             class="file-input file-input-bordered w-full " accept="image/*" />
 
                     </label>
@@ -298,17 +298,6 @@
                     <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Login</a></span>
             </form>
 
-            <div id="my_modal_1" class=" crop_image fixed inset-0 z-50 hidden overflow-auto bg-black bg-opacity-50">
-                <div class="modal-box flex items-center justify-center h-full w-full">
-                    <div class="p-8 mx-auto">
-                        <div class="w-10 h-10 max-w-96" id="image_demo"></div>
-                        <div class="flex justify-end">
-                            <button id="closeModal" class="btn">Confirmer</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
@@ -321,79 +310,6 @@
 
     <script>
         $(document).ready(function() {
-
-
-            $('#photo_visage_crop').change(function() {
-
-                $image_crop = $('#image_demo').croppie({
-                    enableExif: false,
-                    showZoomer: false,
-                    enableZoom: true,
-                    viewport: {
-                        width: 360,
-                        height: 360,
-                        type: 'square'
-                    },
-                    boundary: {
-                        width: 390,
-                        height: 390
-                    }
-                });
-                if ($image_crop) {
-                    $image_crop.croppie('destroy');
-                    $image_crop = $('#image_demo').croppie({
-                        enableExif: false,
-                        showZoomer: false,
-                        enableZoom: true,
-                        viewport: {
-                            width: 360,
-                            height: 360,
-                            type: 'square'
-                        },
-                        boundary: {
-                            width: 390,
-                            height: 390
-                        }
-                    });
-                }
-                var reader = new FileReader();
-                reader.onload = function(event) {
-
-                    $image_crop.croppie('bind', {
-                        url: event.target.result
-                    }).then(function() {
-                        console.log('jQuery bind complete');
-                    });
-                }
-
-                reader.readAsDataURL(this.files[0]);
-                $('#my_modal_1').removeClass('hidden');
-
-            });
-
-            $('.crop_image').click(function(event) {
-                $image_crop.croppie('result', {
-                    type: 'canvas',
-                    size: 'viewport'
-                }).then(function(response) {
-                    var myForm = document.getElementById('myform');
-
-                    var input = document.createElement('input');
-
-                    // Set the type and name attributes of the input
-                    input.type = 'hidden';
-                    input.name = 'photo_visage';
-
-                    // Set the value of the input to the base64 data
-                    input.value = response;
-
-                    myForm.appendChild(input);
-
-                    $('#my_modal_1').addClass('hidden');
-
-                })
-            });
-
 
         });
     </script>
