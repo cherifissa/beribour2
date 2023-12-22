@@ -160,6 +160,318 @@
                 </div>
             </div>
         </div>
+        <div class="card bg-base-300 shadow-xl m-1 d-flex justify-center items-center">
+            <figure class="h-70 w-60 max-h-60 max-w-60 ">
+                <img class="mask mask-squircle" src="{{ asset('images/logo.jpg') }}" alt="Album" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
+
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations Personnelles
+                        </div>
+                        <div class="collapse-content">
+                            <p>M1 à Esgis</p>
+                            <p>Promotion: 2020</p>
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>Numero tel, 0000000</p>
+                            <p>Numero what, 0000000</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-300 shadow-xl m-1 d-flex justify-center items-center">
+            <figure class="h-70 w-60 max-h-60 max-w-60 ">
+                <img class="mask mask-squircle" src="{{ asset('images/logo.jpg') }}" alt="Album" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
+
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations Personnelles
+                        </div>
+                        <div class="collapse-content">
+                            <p>M1 à Esgis</p>
+                            <p>Promotion: 2020</p>
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>Numero tel, 0000000</p>
+                            <p>Numero what, 0000000</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-300 shadow-xl m-1 d-flex justify-center items-center">
+            <figure class="h-70 w-60 max-h-60 max-w-60 ">
+                <img class="mask mask-squircle" src="{{ asset('images/logo.jpg') }}" alt="Album" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
+
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations Personnelles
+                        </div>
+                        <div class="collapse-content">
+                            <p>M1 à Esgis</p>
+                            <p>Promotion: 2020</p>
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>Numero tel, 0000000</p>
+                            <p>Numero what, 0000000</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-300 shadow-xl m-1 d-flex justify-center items-center">
+            <figure class="h-70 w-60 max-h-60 max-w-60 ">
+                <img class="mask mask-squircle" src="{{ asset('images/logo.jpg') }}" alt="Album" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
+
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations Personnelles
+                        </div>
+                        <div class="collapse-content">
+                            <p>M1 à Esgis</p>
+                            <p>Promotion: 2020</p>
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>Numero tel, 0000000</p>
+                            <p>Numero what, 0000000</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-300 shadow-xl m-1 d-flex justify-center items-center">
+            <figure class="h-70 w-60 max-h-60 max-w-60 ">
+                <img class="mask mask-squircle" src="{{ asset('images/logo.jpg') }}" alt="Album" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
+
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations Personnelles
+                        </div>
+                        <div class="collapse-content">
+                            <p>M1 à Esgis</p>
+                            <p>Promotion: 2020</p>
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>Numero tel, 0000000</p>
+                            <p>Numero what, 0000000</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-base-300 shadow-xl m-1 d-flex justify-center items-center">
+            <figure class="h-70 w-60 max-h-60 max-w-60 ">
+                <img class="mask mask-squircle" src="{{ asset('images/logo.jpg') }}" alt="Album" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title uppercase">Mahamat Cherif Issa</h2>
+
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations Personnelles
+                        </div>
+                        <div class="collapse-content">
+                            <p>M1 à Esgis</p>
+                            <p>Promotion: 2020</p>
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Informations du pere
+                        </div>
+                        <div class="collapse-content">
+                            <p>Dandasourara, Ourdi Keri</p>
+                            <p>Teboura keribour, Ouhira Keribour</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Contacts
+                        </div>
+                        <div class="collapse-content">
+                            <p>Numero tel, 0000000</p>
+                            <p>Numero what, 0000000</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border border-base-300">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            Études
+                        </div>
+                        <div class="collapse-content">
+                            <p>hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
     {{-- footer --}}

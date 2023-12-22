@@ -15,7 +15,8 @@ use App\Http\Controllers\EtudiantController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('accueil');
 })->name('index');
 
-Route::resource('user', EtudiantController::class);
+Route::resource('beribours', EtudiantController::class);
+Route::get('beribours/create',[ EtudiantController::class, 'create'])->name('beribours.create');
