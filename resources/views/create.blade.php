@@ -1,5 +1,13 @@
 @extends('layouts.layouts')
 
+@section('hero')
+    <h1 class="mb-5 text-4xl font-bold ">Beribours +228</h1>
+    <p class="mb-5 text-slate-300 ">S'ajouter à la liste des
+        élèves ou étudiants
+        Beribours
+    </p>
+@endsection
+
 @section('content')
     <div class="relative  flex-col justify-center  overflow-hidden">
         <div class="w-full p-6 m-auto  rounded-md shadow-md ring-2 ring-gray-800/50 lg:max-w-xl">
@@ -127,6 +135,20 @@
                 </div>
                 <div class="form-control w-full">
                     <div class="label">
+                        <span class="label-text">Votre Keribour (2) ? </span>
+                    </div>
+                    <div class="flex">
+                        <input type="text" name="keribourbour" placeholder="Keribour"
+                            class="w-full input input-bordered" value="{{ old('keribour') }}" />
+                    </div>
+                    @error('keribourbour')
+                        <div class="label">
+                            <span class="label-text-alt text-red-500 ms-1">{{ $message }}</span>
+                        </div>
+                    @enderror
+                </div>
+                <div class="form-control w-full">
+                    <div class="label">
                         <span class="label-text">Keri du pere ? </span>
                     </div>
                     <div class="flex">
@@ -233,7 +255,7 @@
 
 
                 <div>
-                    <button class="btn btn-block hover:border-t-teal-400">Confirmer</button>
+                    <button class="btn btn-block hover:border-t-teal-400">Envoyer</button>
                 </div>
                 <span>Already have an account ?
                     <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline">Login</a></span>

@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('race');
             $table->string('keri');
             $table->string('keribour');
+            $table->string('keribourbour');
             $table->string('keri_du_pere');
             $table->string('keribour_du_pere');
             $table->string('village_natal');

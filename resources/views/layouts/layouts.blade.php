@@ -35,9 +35,11 @@
                     </svg>
                 </div>
                 <ul tabindex="0"
-                    class="menu menu-lg  dropdown-content mt-3 mr-20  z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>A Propos</a></li>
-                    <li><a>Contact</a></li>
+                    class="menu menu-lg  dropdown-content mt-3 mr-10  z-[1] p-2 shadow bg-base-100 rounded-box w-72">
+                    <li><a href="{{ route('index') }}">Accueil</a></li>
+                    <li><a href="{{ route('beribours.index') }}">Liste des Beribours</a></li>
+                    <li><a href="{{ route('beribours.create') }}">S'ajouter à la liste</a></li>
+                    <li><a>Connexion</a></li>
                 </ul>
             </div>
 
@@ -49,14 +51,7 @@
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center">
             <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold ">+228</h1>
-                <p class="mb-5 text-slate-300 ">Ce projet vise à collecter les informations nécessaires de chaque
-                    étudiant ou
-                    élève
-                    résidant au Togo.
-                    Pour faciliter la liaison et la mise en contact des Beribour, il a été convenu de créer un site web
-                    qui facilite certaines tâches, comme la connaissance, la liaison ou la prise de contact avec un
-                    proche ou un ancien (cadet du même domaine), afin de faciliter les recherches.</p>
+                @yield('hero')
             </div>
         </div>
     </div>
@@ -66,7 +61,17 @@
     {{-- footer --}}
     <footer class="footer footer-center p-4 bg-base-300 text-base-content">
         <aside>
-            <p>Copyright © 2023 - All right reserved Cherif</p>
+            <p>Copyright © 2023 - Tous droits réservés par M.Cherif</p>
+            <nav>
+                <div class="grid grid-flow-col gap-2 justify-evenly w-56 min-w-50 ">
+                    <a>
+                        <img class="fill-current" src="{{ asset('images/instagram.svg') }}" alt="">
+                    </a>
+                    <a>
+                        <img class="fill-current" src="{{ asset('images/facebook.svg') }}" alt="">
+                    </a>
+                </div>
+            </nav>
         </aside>
     </footer>
 

@@ -42,6 +42,7 @@ class EtudiantController extends Controller
             'race' => 'required|string',
             'keri' => 'required|string',
             'keribour' => 'required|string',
+            'keribourbour' => 'required|string',
             'keri_du_pere' => 'required|string',
             'keribour_du_pere' => 'required|string',
             'village_natal' => 'required|string',

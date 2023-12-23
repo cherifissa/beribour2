@@ -25,6 +25,7 @@ class User extends Authenticatable
         'race',
         'keri',
         'keribour',
+        'keribourbour',
         'keri_du_pere',
         'keribour_du_pere',
         'village_natal',
