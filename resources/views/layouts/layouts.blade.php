@@ -50,7 +50,7 @@
         style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center">
-            <div class="max-w-md">
+            <div class="">
                 @yield('hero')
             </div>
         </div>
@@ -59,7 +59,7 @@
     @yield('content')
 
     {{-- footer --}}
-    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content mt-5">
         <aside>
             <p>Copyright © 2023 - Tous droits réservés par M.Cherif</p>
             <nav>

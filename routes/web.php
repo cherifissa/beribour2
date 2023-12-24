@@ -15,13 +15,11 @@ use App\Http\Controllers\EtudiantController;
 |
 */
 
-Route::get('/', function () {
-    return view('accueil');
-})->name('index');
+Route::get('/', [EtudiantController::class, 'acceuil'])->name('index');
 
-// acces with midelware
 Route::get('login', [LoginController::class, 'index'])->name('login');
 Route::post('login', [LoginController::class, 'login'])->name('loginaction');
 
+// acces with midelware
 Route::resource('beribours', EtudiantController::class);
-Route::get('beribours/create',[ EtudiantController::class, 'create'])->name('beribours.create');
+Route::get('beribours/create', [EtudiantController::class, 'create'])->name('beribours.create');

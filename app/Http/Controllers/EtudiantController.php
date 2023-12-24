@@ -11,6 +11,11 @@ class EtudiantController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function acceuil()
+    {
+        return view('accueil');
+    }
+
     public function index()
     {
         return view('liste');
